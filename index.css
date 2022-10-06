@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  background-color: #edf3ff;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  /* Background pattern from https://www.toptal.com/designers/subtlepatterns/ */
+  background-image: url('./images/witewall_3_@2X.png');
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+body > * {
+  box-sizing: border-box;
+}
+
+#header {
+  height: 180px;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  font-family: 'Lobster', cursive;
+  align-items: center;
+  box-shadow: 0px 5px 5px #8f6914;
+  background: rgb(219, 172, 90);
+  background: linear-gradient(
+    0deg,
+    rgba(219, 172, 90, 1) 0%,
+    rgba(185, 203, 222, 1) 80%
+  );
+}
+
+#background-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 180px;
+  opacity: 0.4;
+}
+
+#logo {
+  position: relative;
+  margin-left: 20px;
+  max-height: 100px;
+  box-shadow: 2px 2px 10px #8f6914;
+  z-index: 1;
+}
+
+h1 {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 0 20px;
+  color: #2f5d8f;
+  font-size: 54px;
+  z-index: 1;
+}
+
+ul {
+  font-weight: bold;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+
+ul > li {
+  display: block;
+  padding: 15px;
+}
+
+ul > li > a {
+  display: flex;
+  text-decoration: none;
+  border: 2px solid #8f6914;
+  border-radius: 5px;
+  background-color: #dbb35a;
+  padding: 5px 10px;
+  color: #2f5d8f;
+  font-size: 16px;
+  box-shadow: 5px 5px 5px #8f6914;
+  text-align: center;
+  font-family: 'Kiwi Maru', serif;
+  width: 100px;
+}
+ul > li > a:hover {
+  background-color: #edf3ff;
+}
+
+ul > li > a:active {
+  background-color: #2f5d8f;
+  color: #edf3ff;
+}
+ul > li > a > img {
+  width: 25px;
+  margin-right: 10px;
+  height: 25px;
+}
+
+#container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #8f6914;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #dbb35a;
+  padding: 10px;
+  align-items: center;
+  width: 300px;
+  margin: 15px;
+  background-color: #edf3ff77;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100px;
+  justify-content: center;
+}
+
+.image-container > img {
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid #8f6914;
+  box-shadow: 1px 1px 3px #dbb35a;
+}
+
+.text-content {
+  font-weight: bold;
+  text-align: center;
+  color: #2f5d8f;
+}
+
+footer {
+  color: #2f5d8f;
+  font-family: 'Kiwi Maru', serif;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  ul {
+    flex-direction: column;
+  }
+
+  ul > li {
+    width: 100%;
+    padding: 0 0 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  ul > li > a {
+    margin: 0 10px;
+  }
+}
